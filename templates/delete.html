@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Delete</title>
+    {% include 'bootstraplines.html' %}
+</head>
+<body>
+<style>
+    body{
+        background-color: lightblue;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+
+                {% csrf_token %}
+                <h2 class="text-center color-red">All User Records Successfully Deleted</h2>
+
+                <center>
+                    <a href="/">Goto Home Page</a>
+                </center>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

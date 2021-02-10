@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Retrieve Form</title>
+    {% include 'bootstraplines.html' %}
+</head>
+<body>
+<style>
+    body{
+        background-color: lightcyan;
+    }
+</style>
+ {% csrf_token %}
+    {% if response %}
+    {{ response|safe }}
+    {% else %}
+    <h2>Data is Not Available</h2>
+
+{% endif %}
+<h1 class="text-center">Create More Records <a href="/inserting">Click Here</a> </h1>
+<p class="text-center"><a class="text-center btn btn-success" href="/">Goto Home Page</a></p>
+</body>
+</html>
